@@ -1,12 +1,12 @@
 [submodule "curl"]
 	path = curl
-	url = git://github.com/bagder/curl.git
-[submodule "libssh2"]
-	path = libssh2
-	url = git://git.libssh2.org/libssh2.git
+	url = https://github.com/bagder/curl.git
 [submodule "zlib"]
 	path = zlib
 	url = https://github.com/madler/zlib
 [submodule "build/gyp-next"]
 	path = build/gyp-next
 	url = https://github.com/nodejs/gyp-next.git
+[submodule "libssh2"]
+	path = libssh2
+	url = https://github.com/libssh2/libssh2.git
