@@ -22,18 +22,6 @@ a working, statically linked version of the latest libcurl.
 
 **Both x86 and x64 builds are supported.**
 
-Happy linking ;)
-
-# Download prebuilt version of curl
-
-Download available for your convenience over at [SourceForge](https://sourceforge.net/projects/curlforwindows/files/?source=navbar) which
-also includes the static libraries.
-
-# Obtaining a free copy of visual studio
-
-If you do not have a visual studio license you can
-download [Visual Studio 2013 Express edition](http://go.microsoft.com/?linkid=9816758) for free.
-
 # Curl dependencies
 
 - [Openssl](https://github.com/openssl/openssl): 1.0.0.1e
@@ -42,11 +30,11 @@ download [Visual Studio 2013 Express edition](http://go.microsoft.com/?linkid=98
 
 # Prerequisites
 
-* [Python 2.7](python.org)
+* [Python 3.14.2](python.org)
 
 # Obtaining prerequisites 
 	
-    $ git clone https://github.com/peters/curl-for-windows.git
+    $ git clone https://github.com/david568303/curl-for-windows-next.git
     $ git submodule update --init --recursive
       
 # Configuration options
@@ -68,32 +56,4 @@ Options:
 
     $ python configure.py 
 
-Open respective **curl.sln** found in **out** folder ;)
-
-# Simple curl example
-
-If you are new to curl you can checkout the example project
-found in curl.sln or you can view additional the **[examples](https://github.com/bagder/curl/tree/master/docs/examples)**
-in the official curl repository.
-
-# Linking with libcurl (without gyp)
-
-- Add preprocessor flag 
-  - CURL_STATICLIB
- 
-- Add include directory
-	- path/to/curl/include
-
-- Add additional library search directory
-	- path/to/out/Debug|Release/obj
-	
-- Link with the following libraries
-  - libcurl.lib
-  - openssl.lib
-  - libssh2.lib
-  - zlib.lib
-  - wsock32.lib
-  - wldap32.lib
-  - ws2_32.lib
-  
-By now you should have sweet, statically linked, CURL! ;)
+Open respective **curl.sln** found in **out** folder.
